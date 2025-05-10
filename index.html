@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./Styless.css">
+    <link rel="stylesheet" href="./Estilos/Styless.css">
 </head>
 <body>
     <header>
         <div class="logo">Roots & Reads</div>
         <nav>
-            <a href="#">Crear</a>
-            <a href="#">Lectura</a>
-            <a href="#">Catalogo</a>
-            <a href="./SignIn.html">Sign & log </a>
+            <div class="dropdown">
+                <a href="#" onclick="toggleDropdown()">Crear ▼</a>
+                <div id="crearMenu" class="dropdown-content">
+                    <a href="./PAGES/Crear.html">Crear libro</a>
+                    <a href="./PAGES/mylibros.html">Mis libros</a>
+                </div>
+            </div>
+            <a href="./PAGES/Lectura.html">Lectura</a>
+            <a href="./PAGES/Catalogo.html">Catálogo</a>
+            <a href="./PAGES/SignIn.html">Sign & log</a>
         </nav>
+        
     </header>
-    <section class="hero">
+    <section class="hero">      
         <div class="hero-content">
             <h1>Donde los libros son árboles<br>y la mente, el bosque.</h1>
             <p>Tu hogar natural de libros..</p>
@@ -31,5 +38,6 @@
             </form>
         </div>
     </section>
+    <script src="./Procesos/Funcion.js"></script>
 </body>
 </html>
